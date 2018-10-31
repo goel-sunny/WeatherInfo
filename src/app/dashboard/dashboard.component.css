@@ -1,0 +1,26 @@
+.row {
+    margin-top: 50px
+}
+
+#current-forcast-label, #geo-codes-color {
+    color: #ffa500bf;
+}
+
+#dashboard-search {
+    margin-top: 50px;
+}
+
+#weather-search {
+    width: 300px;
+    margin-right: 5px
+}
+
+span, div, table {
+    color: #000000a6;
+}
+
+#fra-cel {
+    border: 0.1vw solid #adb5bd;
+    background-color: rgb(240, 245, 241);
+    cursor: pointer;
+}

@@ -1,0 +1,19 @@
+.wi {
+    color: orange;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+#min-temp {
+    background-color: #ffa50085;
+}
+
+#max-temp {
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #8080808f
+}
+
+#fiveday-forcasting-chart {
+    margin-bottom: 50px;
+}

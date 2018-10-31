@@ -1,0 +1,27 @@
+.login-section {
+    height: inherit;
+    /* background-image: url("../../assets/login.png");
+    background-repeat: no-repeat */
+    background-color: #fffafac7
+}
+
+.h2 {
+    font-family: cursive
+}
+
+.row {
+    margin: 0px;
+    padding: 0px
+}
+
+#dummy-row {
+    height: 20vh;
+}
+
+.input-group, .btn {
+    width: 300px
+}
+
+.form-inline, .btn {
+    margin-top: 20px
+}

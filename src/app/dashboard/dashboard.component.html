@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row d-flex justify-content-end">
+    <span class="btn-group" id="fra-cel">
+      <button class="btn btn-success" #cel (click)="update('c')" value="yes"> ºC</button>
+      <button class="btn btn-success" #fra (click)="update('f')" value="no"> ºF </button>
+    </span>
+  </div>
+  <div class="row d-flex justify-content-center" id="dashboard-search">
+    <form class="form-inline">
+      <input class="form-control" placeholder="Your City Name" id="weather-search" aria-label="Search">
+      <button type="button" class="btn btn-success" (click)="getWeatherInfo()">Search</button>
+    </form>
+  </div>
+
+  <div class="row d-flex justify-content-center">
+    <div class="h3" id="current-forcast-label"> Current Weather and Forcast in your city</div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <app-current-weather *ngIf="flag == true" [latitute]="lat" [longitute]="lon" [CelFraFlag]="CelFraFlag"></app-current-weather>
+    </div>
+    <div class="col-6">
+      <div id="three-hr-1day">
+        <app-forcast-weather *ngIf="flag == true" [latitute]="lat" [longitute]="lon" [CelFraFlag]="CelFraFlag"></app-forcast-weather>
+      </div>
+    </div>
+  </div>

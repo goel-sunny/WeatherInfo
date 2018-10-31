@@ -1,0 +1,48 @@
+<div class="user-info">
+  <div class="row" id="dummy-row"></div>
+  <div class="row">
+    <div class="col-4"> </div>
+    <div class="col-5">
+      <div id="user-info-header">
+        <span class="h2">User Info</span>
+      </div>
+      <div id="user-info-form">
+        <div class="form-inline">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+              </span>
+            </div>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" id="username" aria-describedby="basic-addon1">
+          </div>
+        </div>
+        <div class="form-inline">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">
+                <i class="fa fa-key" aria-hidden="true"></i>
+              </span>
+            </div>
+            <input type="text" class="form-control" placeholder="API Id" aria-label="API Id" id="key" aria-describedby="basic-addon1">
+          </div>
+        </div>
+        <div id="api-call">
+          <div class="h5">Server Calls </div>
+          <table class="table table-bordered table-striped table-hover" id="current-table">
+            <tbody>
+              <tr *ngFor="let data of ApiCallCouter">
+                <td>{{data.key}}</td>
+                <td>{{data.counter}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="confirm-cancel-btn-grp" class="d-inline-block">
+          <button class="btn btn-success" (click)="confirmCall()">Confirm</button>
+          <button class="btn btn-secondary">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

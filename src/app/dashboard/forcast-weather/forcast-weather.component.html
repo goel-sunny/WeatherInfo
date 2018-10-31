@@ -1,0 +1,40 @@
+<div id="fiveday-forcasting-chart">
+  <canvas #myCanvas width="400" height="400"></canvas>
+</div>
+<div>
+  <span class="h4"> 5 Days Weather Forcast </span>
+</div>
+<table class="table table-bordered table-striped table-hover" id="current-table">
+  <tbody>
+    <tr *ngFor="let data of ForcastWeather">
+      <td>
+        <div *ngIf="data.icon==1">{{data.date}}
+          <i class="wi wi-day-sunny"></i>
+        </div>
+        <div *ngIf="data.icon==2">{{data.date}}
+          <i class="wi wi-day-cloudy"></i>
+        </div>
+        <div *ngIf="data.icon==3">{{data.date}}
+          <i class="wi wi-day-rain"></i>
+        </div>
+        <div *ngIf="data.icon==4">{{data.date}}
+          <i class="wi wi-day-snow"></i>
+        </div>
+      </td>
+      <td>
+        <div>
+          <span id="min-temp"> {{data.temperature_min}}º{{symbolCelciusFar}} </span>
+          <span id="max-temp">{{data.temperature_max}}º{{symbolCelciusFar}}</span>
+          <span>{{data.cloudiness}} </span>
+        </div>
+        <div>
+          <span> {{data.windspeed}} {{symbolMeterMiles}} </span>
+        </div>
+        <div>
+          <span> Clouds: {{data.humidity}} % , </span>
+          <span id="pressure">{{data.pressure}} hpa</span>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>

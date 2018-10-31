@@ -1,0 +1,39 @@
+<div class="login-section">
+  <div class="row" id="dummy-row"></div>
+  <div class="row">
+    <div class="col-6"> </div>
+    <div class="col-4">
+      <div id="login-header">
+        <span class="h2">Login Credentials </span>
+      </div>
+      <div id="login-form">
+        <div class="form-inline">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+              </span>
+            </div>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" #username aria-describedby="basic-addon1">
+          </div>
+        </div>
+        <div class="form-inline">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">
+                <i class="fa fa-key" aria-hidden="true"></i>
+              </span>
+            </div>
+            <input type="text" class="form-control" placeholder="API Id" aria-label="API Id" #key aria-describedby="basic-addon1">
+          </div>
+        </div>
+        <div id="save-btn-grp">
+          <button class="btn btn-success" (click)="logIn(username.value,key.value)">Log In</button>
+        </div>
+        <div id="cancel-btn-grp">
+          <button class="btn btn-secondary">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

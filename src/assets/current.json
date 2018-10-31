@@ -1,0 +1,41 @@
+    {
+    "coord": {
+        "lon": 76,
+        "lat": 29
+    },
+    "weather": [
+        {
+            "id": 801,
+            "main": "Clouds",
+            "description": "few clouds",
+            "icon": "02n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 296.908,    
+        "pressure": 1002.27,
+        "humidity": 36,
+        "temp_min": 296.908,
+        "temp_max": 296.908,
+        "sea_level": 1027.56,
+        "grnd_level": 1002.27
+    },
+    "wind": {
+        "speed": 3.46,
+        "deg": 12.0025
+    },
+    "clouds": {
+        "all": 12
+    },
+    "dt": 1540042344,
+    "sys": {
+        "message": 0.0046,
+        "country": "IN",
+        "sunrise": 1539997221,
+        "sunset": 1540038041
+    },
+    "id": 1270260,
+    "name": "State of Haryāna",
+    "cod": 200
+}
